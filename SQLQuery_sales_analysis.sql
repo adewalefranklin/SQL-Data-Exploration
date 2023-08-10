@@ -1,4 +1,5 @@
 --data inspection
+
 select* from projectportfolio..sales_data_sample
 
 --checking unique values
@@ -53,6 +54,7 @@ group by MONTH_ID, productline
 order by 3 desc
 
 --To know who our best customer is using the RFM Analysis Method
+ 
 drop table if exists #rfm
  with rfm as -- Using CTE Expression
 (
