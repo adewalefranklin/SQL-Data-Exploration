@@ -54,7 +54,7 @@ order by 3 desc
 
 --To know who our best customer is using the RFM Analysis Method
 drop table if exists #rfm
- with rfm as 
+ with rfm as -- Using CTE Expression
 (
 select 
     customername, 
